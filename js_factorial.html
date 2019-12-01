@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<li><b style="font-size: 30px; color: red;">CALCULATE FACTORIAL</li> </b>
+
+
+Enter Integer: <input type="text" id="myText" value="6">
+
+<button onclick="myFunction()">Calculate</button>
+
+<p id="demo"></p>
+
+<script>
+function factorial(n) {
+  return (n != 1) ? n * factorial(n - 1) : 1;
+}
+
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  y = factorial(x)
+  document.getElementById("demo").innerHTML = y;
+}
+</script>
+
+</body>
+</html>

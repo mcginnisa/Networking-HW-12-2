@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<li><b style="font-size: 30px; color: red;">DO NOT PUSH THE BUTTON</li> </b>
+
+
+<p>Don't Do IT!</p>
+
+<p><button onclick="myFunction()">STOP</button></p>
+
+<div id="myDIV">Hello</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "WHAT HAVE YOU DONE";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+</script>
+
+</body>
+</html>
